@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Registration | District Bar Association</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><span>⚖ Justice • Integrity • Service</span><a href="index.html">← Back to Home</a></div></div>
+<header><nav class="nav container">
+  <a href="index.html" class="brand"><div class="brand-mark"><img src="./dba.png"></div><div><h2>District Bar Association</h2><small>Justice through integrity</small></div></a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false"><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span></button>
+<div class="nav-links" id="navMenu"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="members.html">Members</a><a href="contact.html">Contact</a><a href="login.html">Login</a></div>
+</nav></header>
+
+<section class="auth-section">
+  <div class="container">
+    <div class="form-card">
+      <div class="eyebrow">Become a member</div>
+      <h2>Member Registration</h2>
+      <p class="intro">Enter your details to begin the membership registration process.</p>
+
+      <form onsubmit="event.preventDefault(); alert('Demo only. Your registration has not been saved. Connect a secure backend to process applications.');">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Advocate's full name" required autocomplete="name">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="regemail">Email Address</label>
+            <input id="regemail" name="email" type="email" placeholder="Email address" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Phone number" required autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="enrolment">Bar Enrolment Number</label>
+            <input id="enrolment" name="enrolment" type="text" placeholder="Enrolment number" required>
+          </div>
+          <div class="form-group">
+            <label for="membertype">Membership Type</label>
+            <select id="membertype" name="membertype" required>
+              <option value="">Select type</option>
+              <option value="ordinary">Ordinary Member</option>
+              <option value="life">Life Member</option>
+              <option value="other">Other / To Be Verified</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Office / Correspondence Address</label>
+          <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="newpassword">Create Password</label>
+          <input id="newpassword" name="password" type="password" placeholder="At least 8 characters" minlength="8" required autocomplete="new-password">
+        </div>
+
+        <div class="form-group">
+          <label for="confirm">Confirm Password</label>
+          <input id="confirm" name="confirm" type="password" placeholder="Re-enter password" minlength="8" required autocomplete="new-password">
+        </div>
+
+        <label class="checkline">
+          <input type="checkbox" required>
+          <span>I confirm that the information supplied is accurate and agree to the Association's applicable membership rules and privacy policy.</span>
+        </label>
+
+        <button class="btn" type="submit">Submit Registration →</button>
+      </form>
+
+      <p class="form-note">Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-bottom">© 2026 District Bar Association. Official association details to be added.</div></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
